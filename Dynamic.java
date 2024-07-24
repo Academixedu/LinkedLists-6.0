@@ -1,9 +1,27 @@
-public class Dynamic{
-public static void main(String[]args)
-  {
-  // create an Object for LinkedList
-    // add person objects in it
-    // iterate that List using iterator
-    // print it by using while loop
-  }
+import java.util.LinkedList;
+import java.util.Iterator;
+class Person {
+    String name;
+    int age;
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    void printDetails() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+
+public class Dynamic {
+    public static void main(String[] args) {
+        LinkedList<Person> persons = new LinkedList<>();
+        persons.add(new Person("Kamal", 38));
+        persons.add(new Person("Konda", 23));
+        persons.add(new Person("Hemanth", 36));
+        Iterator<Person> iterator = persons.iterator();
+        while (iterator.hasNext()) {
+            Person person = iterator.next();
+            person.printDetails();
+        }
+    }
 }
