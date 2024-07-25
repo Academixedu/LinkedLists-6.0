@@ -1,5 +1,5 @@
 import java.util.LinkedList;
-import java.util.Iterator;
+
 
 public class ForL{
   public static void main(String[]args){
