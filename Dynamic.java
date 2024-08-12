@@ -9,13 +9,13 @@ public class Dynamic
 
       LinkedList <Person> ll= new LinkedList<>();
 
-      Person obj1=new Person("Ratan", 100000, 22);
+      Person obj1=new Person("sarvesh", 100000, 22);
       Person obj2=new Person("shreyas", 130, 22);
      
       //passing an argument to LinkList
       ll.add(obj1);
       ll.add(obj2);
-      ll.add(new Person("Sarvesh",300,22));
+      ll.add(new Person("ratan",300,22));
 
       System.out.println("-----------------------------");
 
