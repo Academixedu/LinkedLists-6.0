@@ -1,9 +1,16 @@
+import java.util.LinkedList;
+import java.util.Iterator;
+import java.util.List;
+
 public class Dynamic{
-public static void main(String[]args)
-  {
-  // create an Object for LinkedList
-    // add person objects in it
-    // iterate that List using iterator
-    // print it by using while loop
-  }
+public static void main(String[]args){
+
+  LinkedList<person> a = new LinkedList<person>();
+a.add(new person(1,"srrk"));
+
+  Iterator<person> i = a.iterator();
+  while (i.hasNext()) {
+    System.out.println(i.next());
+} 
+}
 }

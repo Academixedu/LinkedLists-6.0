@@ -1,7 +1,21 @@
+import java.util.LinkedList;
+import java.util.Iterator;
+
 public class Create{
 public static void main(String[]args){
-// create  a Linked List class object
-  // Add Values in it
-  // Iterate it by using Iterator
-}
+
+        LinkedList<String> list = new LinkedList<>();
+
+        list.add("First");
+        list.add("Second");
+        list.add("Third");
+        list.add("Fourth");
+
+        Iterator<String> iterator = list.iterator();
+
+        while (iterator.hasNext()) {
+            String value = iterator.next();
+            System.out.println(value);
+        }
+    }
 }
