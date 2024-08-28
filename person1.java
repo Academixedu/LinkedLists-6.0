@@ -9,28 +9,28 @@ public class person1 {
     public void setSid(int sid) {
         this.sid = sid;
     }
-    public String getSname() {
+    public String getPersonname() {
         return personname;
     }
-    public void setSname(String personname) {
+    public void setPersonname(String personname) {
         this.personname = personname;
     }
-    public char getSgender() {
+    public char getSalary() {
         return salary;
     }
-    public void setSgender(char salary) {
+    public void setSalary(char salary) {
         this.salary = salary;
     }
-    public person(int sid, String personname, char salary) {
+    public person1(int sid, String personname, char salary) {
         this.sid = sid;
         this.personname = personname;
         this.salary = salary;
     }
-    public person() {
+    public person1() {
     }
     @Override
     public String toString() {
-        return "person [sid=" + sid + ", personname=" + personname + ", salary=" + salary +"]";
+        return "person1 [sid=" + sid + ", personname=" + personname + ", salary=" + salary + ", getSid()=" + getSid()+  "]";
     }
     
 
